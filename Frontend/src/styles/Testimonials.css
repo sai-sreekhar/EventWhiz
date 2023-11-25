@@ -1,0 +1,97 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-image: linear-gradient(#031326, rgba(9, 40, 78, 0.83));
+}
+.TestimonialsWholeBody {
+  width: 100%;
+  height: 100%;
+}
+.TestimonialsWholeBody > .container-fluid {
+  background-image: url("./../assets/images/backgroundFull.png");
+  background-size: 1520px;
+  height: 790px;
+  padding-bottom: 52rem;
+  background-repeat: repeat;
+}
+.TestimonialsWholeBody .container-body {
+  margin: 30px 78px;
+  background: linear-gradient(
+        #ffffff,
+        rgba(247, 223, 248, 0.6447),
+        rgba(206, 90, 209, 0.36)
+      )
+      padding-box,
+    linear-gradient(
+        to right,
+        rgba(196, 198, 241, 0.4),
+        rgba(206, 90, 209, 0.54)
+      )
+      border-box;
+  border-radius: 10px;
+  border: 24px solid transparent;
+}
+
+.TestimonialsWholeBody .TestimonialsBody {
+  margin: 0px 30px;
+  font-family: "Cabin";
+}
+.TestimonialsWholeBody .TestimonialsBodyHeading1 {
+  font-size: 24px;
+  font-weight: 800;
+}
+.TestimonialsWholeBody .TestimonialsBodyHeading2 {
+  font-size: 36px;
+  color: #194476;
+  font-weight: 800;
+}
+
+.TestimonialsWholeBody .card {
+  width: 70%;
+  height: 20rem;
+  padding: 20px;
+  padding-top: 25px;
+  margin: 6px auto;
+  background-image: linear-gradient(#e5f1fd, #e5f1fd);
+  text-align: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.TestimonialsWholeBody .slick-dots {
+  top: 19rem;
+}
+
+.TestimonialsWholeBody .slick-dots li button::before {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.8rem;
+}
+
+.TestimonialsWholeBody .slick-prev,
+.TestimonialsWholeBody .slick-next {
+  position: absolute;
+  top: 45%;
+}
+
+.TestimonialsWholeBody .slick-prev:hover {
+  cursor: pointer;
+}
+.TestimonialsWholeBody .slick-prev::before {
+  content: "\2190";
+  position: absolute;
+  left: 45px;
+  font-size: 50px;
+}
+.TestimonialsWholeBody .slick-next::before {
+  content: "\2192";
+  position: absolute;
+  right: 45px;
+  font-size: 50px;
+}
+.TestimonialsWholeBody .CardName {
+  padding-top: 1rem;
+}
+.TestimonialsWholeBody .Quotes {
+  text-align: center;
+}

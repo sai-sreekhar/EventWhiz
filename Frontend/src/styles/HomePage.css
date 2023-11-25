@@ -1,0 +1,154 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-image: linear-gradient(#031326, rgba(9, 40, 78, 0.83));
+}
+.HomeWholeBody {
+  width: 101.3%;
+  height: 100%;
+}
+
+.HomeWholeBody > .container-fluid {
+  background-image: url("./../assets/images/backgroundFull.png");
+  background-size: 1520px;
+  background-repeat: repeat;
+  margin-top: 20px;
+}
+.HomeWholeBody .container-body {
+  margin: 30px 78px;
+  background: linear-gradient(
+        #ffffff,
+        rgba(247, 223, 248, 0.6447),
+        rgba(206, 90, 209, 0.36)
+      )
+      padding-box,
+    linear-gradient(
+        to right,
+        rgba(196, 198, 241, 0.4),
+        rgba(206, 90, 209, 0.54)
+      )
+      border-box;
+  border-radius: 10px;
+  border: 24px solid transparent;
+}
+
+.HomeWholeBody .HomeBody {
+  margin: 0px 80px;
+  font-family: "Cabin";
+}
+
+.HomeWholeBody .HomeWelcome {
+  background-color: #07192e;
+  color: white;
+  margin-top: 45px;
+  border-radius: 5px;
+}
+.HomeWholeBody .HomeWelcomeSub {
+  padding: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.HomeWholeBody .HomeWelcomeSubImage1 {
+  position: absolute;
+  top: 200px;
+  right: 480px;
+}
+.HomeWholeBody .HomeWelcomeSubImage2 {
+  position: absolute;
+  top: 210px;
+  right: 200px;
+}
+.HomeWholeBody .HomeWelcomeSubText {
+  position: absolute;
+  top: 240px;
+  text-align: center;
+  right: 60px;
+  font-size: 56px;
+  font-family: "Oswald";
+  color: white;
+}
+.HomeWholeBody .container-SubBody {
+  padding-top: 120px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 600;
+}
+.HomeWholeBody .btn1 {
+  color: white;
+  text-decoration: none;
+  border: 2px solid black;
+  padding: 10px 20px;
+  font-size: 18px;
+  background: transparent;
+  position: relative;
+  transition: all 0.5s;
+  overflow: hidden;
+  background-color: #274a8d;
+  border-radius: 5px;
+  font-family: "Oswald";
+}
+
+.HomeWholeBody .btn1:hover {
+  color: black;
+}
+
+.HomeWholeBody .btn1::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  top: 0;
+  left: -40px;
+  transform: skewX(45deg);
+  background-color: #274a8d;
+  z-index: -1;
+  transition: all 1s;
+}
+
+.HomeWholeBody .btn1:hover::before {
+  width: 160%;
+}
+.HomeWholeBody .btn-1 {
+  padding: 10px 70px;
+}
+
+.HomeWholeBody .popular-events {
+  font-size: 40px;
+  color: white;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.HomeWholeBody .caption {
+  background-color: white;
+  color: #274a8d;
+  font-size: 20px;
+  text-align: center;
+  padding: 20px 0px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  font-weight: 600;
+}
+.HomeWholeBody .slick-prev,
+.HomeWholeBody .slick-next {
+  position: absolute;
+  top: 45%;
+}
+
+.HomeWholeBody .slick-prev:hover {
+  cursor: pointer;
+}
+.HomeWholeBody .slick-next::before {
+  content: "\2192";
+  position: absolute;
+  right: -45px;
+  font-size: 50px;
+}
+.HomeWholeBody .slick-prev::before {
+  content: "\2190";
+  position: absolute;
+  left: -45px;
+  font-size: 50px;
+}

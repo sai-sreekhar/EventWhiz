@@ -1,0 +1,29 @@
+body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+#root {
+  width: 100%;
+  background-image: linear-gradient(#031326, #0a1a2e, rgba(7, 21, 39, 0.9));
+}
+
+body::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+body::-webkit-scrollbar
+{
+	width: 16px;
+	background-color: #b2b0b0;
+}
+
+body::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.8);
+  background-image: linear-gradient(to right,rgba(196, 198, 241, 0.4), rgba(206, 90, 209, 0.54))
+}

@@ -1,0 +1,91 @@
+.LoginWholeBody {
+  font-family: "Cabin";
+}
+.LoginWholeBody .ImageLogin {
+  width: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url("./../assets/images/LoginImage.png"
+  );
+  height: 100%;
+  background-color: #1e1e1e;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* background-image: linear-gradient(rgb(13, 13, 13),#1E1E1E); */
+}
+.LoginWholeBody .EventWhizlogo {
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+  padding-bottom: 10px;
+}
+.LoginWholeBody .LoginText {
+  font-family: "Cabin";
+  font-size: 40px;
+  position: absolute;
+  color: white;
+  text-align: center;
+  left: 25%;
+  top: 38%;
+}
+.LoginWholeBody .SideImage {
+  background-image: url("./../assets/images/SubImage.png");
+  width: 50%;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.LoginWholeBody .pageCenter {
+  margin-top: 15%;
+}
+.LoginWholeBody .ForgotPassLink {
+  font-size: 18px;
+  color: blue;
+}
+
+.LoginWholeBody .btn1 {
+  color: white;
+  text-decoration: none;
+  border: 2px solid black;
+  padding: 10px 20px;
+  font-size: 18px;
+  background: transparent;
+  position: relative;
+  transition: all 0.5s;
+  overflow: hidden;
+  background-color: #274a8d;
+  border-radius: 5px;
+  font-family: "Oswald";
+}
+
+.LoginWholeBody .btn1:hover {
+  color: black;
+}
+
+.LoginWholeBody .btn1::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  top: 0;
+  left: -40px;
+  transform: skewX(45deg);
+  background-color: #274a8d;
+  z-index: -1;
+  transition: all 1s;
+}
+
+.LoginWholeBody .btn1:hover::before {
+  width: 160%;
+}
+.LoginWholeBody .btn-1 {
+  padding: 10px 70px;
+}
+
+.LoginWholeBody .RegisterButton {
+  padding: 20px 70px;
+}

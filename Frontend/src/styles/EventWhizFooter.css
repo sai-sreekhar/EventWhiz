@@ -1,0 +1,111 @@
+.FooterEverything {
+  background-repeat: no-repeat;
+}
+.FooterEverything .footer {
+  font-family: "Cabin";
+  color: white;
+  background-image: linear-gradient(to right, #155f7e, #c72e76);
+  background-size: 100%;
+  width: 100%;
+}
+.FooterEverything .footer-heading {
+  font-size: 40px;
+  text-align: center;
+}
+.FooterEverything .footer-sub {
+  font-size: 19px;
+  text-align: left;
+  padding-left: 8rem;
+}
+div > a {
+  text-decoration: none;
+  color: white;
+}
+.FooterEverything .text-center {
+  text-align: center;
+}
+.FooterEverything .fa-brands {
+  background-color: black;
+  display: inline;
+  font-size: 2rem;
+  padding: 4px;
+  padding-top: 0px;
+}
+.FooterEverything .contact-msg {
+  color: #0400b3;
+}
+
+.FooterEverything .footer-sub-contact {
+  padding-left: 7rem;
+}
+.FooterEverything .footer-sub-logo {
+  padding-left: 3rem;
+  padding-right: 4rem;
+}
+.FooterEverything .HorizontalLineWhite {
+  padding: 2px 80px;
+  background-color: #ffffff;
+}
+@media screen and (min-width: 2560px) {
+  .FooterEverything .footer-heading {
+    font-size: 45px;
+  }
+  .FooterEverything .footer-sub {
+    font-size: 30px;
+    padding-left: 13rem;
+  }
+  .FooterEverything .footer-sub-contact {
+    padding-left: 12rem;
+  }
+  .FooterEverything .fa-brands {
+    padding: 10px;
+    padding-top: 0px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .FooterEverything .footer-heading {
+    font-size: 30px;
+  }
+  .FooterEverything .footer-sub {
+    padding-left: 5rem;
+  }
+  .FooterEverything .footer-sub-contact {
+    padding-left: 4rem;
+  }
+  .FooterEverything .fa-brands {
+    padding: 2px;
+    padding-top: 0px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .FooterEverything .tablet-pading {
+    margin-top: 3rem;
+  }
+  .FooterEverything .footer-sub {
+    padding-left: 3rem;
+  }
+  .FooterEverything .footer-sub-contact {
+    padding-left: 3rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .FooterEverything .mobile-padding {
+    padding-top: 3rem;
+    padding-bottom: 0FooterEverything 0.5rem;
+  }
+  .FooterEverything .tablet-pading {
+    padding-top: 1rem;
+  }
+  .FooterEverything .footer-sub {
+    padding-left: 1rem;
+  }
+  .FooterEverything .footer-sub-contact {
+    padding-left: 2rem;
+  }
+  .FooterEverything .footer-sub-logo {
+    padding-left: 2rem;
+  }
+  .FooterEverything .fa-brands {
+    margin-left: 8px;
+  }
+}

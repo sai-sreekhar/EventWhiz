@@ -1,0 +1,120 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-image: linear-gradient(#031326, rgba(9, 40, 78, 0.83));
+}
+.ServiceWholeBody {
+  width: 101.3%;
+  height: 100%;
+}
+.ServiceWholeBody > .container-fluid {
+  background-image: url("./../assets/images/backgroundFull.png");
+  background-size: 1520px;
+  background-repeat: repeat;
+  padding-bottom: 50px;
+}
+.ServiceWholeBody .container-body {
+  margin: 30px 78px;
+  background: linear-gradient(
+        #ffffff,
+        rgba(247, 223, 248, 0.6447),
+        rgba(206, 90, 209, 0.36)
+      )
+      padding-box,
+    linear-gradient(
+        to right,
+        rgba(196, 198, 241, 0.4),
+        rgba(206, 90, 209, 0.54)
+      )
+      border-box;
+  border-radius: 10px;
+  border: 24px solid transparent;
+}
+.ServiceWholeBody .ServiceBody {
+  margin: 0px 30px;
+  font-family: "Cabin";
+}
+.ServiceWholeBody .ServiceBodyHeading1 {
+  font-size: 24px;
+  font-weight: 800;
+}
+.ServiceWholeBody .ServiceBodyHeading2 {
+  font-size: 36px;
+  color: #194476;
+  font-weight: 800;
+}
+
+.ServiceWholeBody .ServiceBodySub {
+  margin-bottom: 40px;
+  margin-right: 0px;
+  border-radius: 10px;
+}
+
+/* ImageOverlay.css */
+.ServiceWholeBody .container1 {
+  position: relative;
+  width: 380px; /* Set the desired width for the container1 */
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.ServiceWholeBody .image {
+  width: 100%;
+  height: 20rem;
+  transition: transform 0.3s ease-in-out;
+  filter: blur(5px);
+}
+
+.ServiceWholeBody .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: #fff;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+.ServiceWholeBody .Image1 {
+  background-image: linear-gradient(
+    to right,
+    rgba(243, 38, 38, 0.5),
+    rgba(42, 41, 41, 0.5)
+  );
+}
+.ServiceWholeBody .Image2 {
+  /* background-image: linear-gradient(to right,rgba(255, 255, 255, 0.5),rgba(2, 80, 80, 0.5)); */
+}
+.ServiceWholeBody .container1:hover .image {
+  background: linear-gradient(
+    to right,
+    rgba(113, 114, 46, 0.8),
+    rgba(41, 45, 98, 0.8)
+  );
+  filter: blur(0px);
+  transform: scale(1.3);
+  /* Zoom in on hover */
+}
+
+.ServiceWholeBody .overlayHeading {
+  padding-top: 30px;
+  font-size: 60px;
+  font-weight: 600;
+}
+.ServiceWholeBody .overlaySubHeading {
+  padding-top: 2px;
+  font-size: 40px;
+}
+.ServiceWholeBody .overlayContent {
+  padding: 20px 30px;
+  text-align: left;
+  font-size: 18px;
+}
+.ServiceWholeBody .image1 {
+}

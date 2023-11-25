@@ -1,0 +1,32 @@
+service: event-whiz 
+disabledDeprecations: '*' 
+configValidationMode: error 
+provider: 
+  name: aws 
+  runtime: nodejs18.x 
+  stage: dev 
+  region: ap-south-1
+  memorySize: 128 
+  timeout: 60
+plugins:
+  - serverless-offline
+  - serverless-domain-manager
+custom:
+  customDomain:
+    domainName: apiv1.eventwhiz.site
+    certificateName: 'eventwhiz.site'
+    basePath: ''
+    stage: ${self:provider.stage}
+    createRoute53Record: false
+functions: 
+  app: 
+    handler: app.handler 
+    events: 
+      - http: 
+          path: / 
+          method: ANY 
+          cors: true 
+      - http: 
+          path: /{proxy+} 
+          method: ANY 
+          cors: true 

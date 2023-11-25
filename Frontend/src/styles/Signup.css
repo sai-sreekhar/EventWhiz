@@ -1,0 +1,90 @@
+.SingUpWholeBody {
+  font-family: "Cabin";
+}
+.SingUpWholeBody .ImageLogin {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url("./../assets/images/SignUp.png");
+  height: 100%;
+  background-color: #1e1e1e;
+  background-repeat: no-repeat;
+  width: 50%;
+  background-size: 100% 100%;
+  /* background-image: linear-gradient(rgb(13, 13, 13),#1E1E1E); */
+}
+.SingUpWholeBody .EventWhizlogo {
+  position: absolute;
+  bottom: 0;
+  left: 30%;
+  padding-bottom: 10px;
+}
+.SingUpWholeBody .LoginText {
+  font-family: "Cabin";
+  font-size: 40px;
+  position: absolute;
+  color: white;
+  text-align: center;
+  left: 25%;
+  top: 38%;
+}
+.SingUpWholeBody .SideImage {
+  background-image: url("./../assets/images/SubImage.png");
+  width: 50%;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.SingUpWholeBody .pageCenter {
+  margin-top: 12%;
+}
+.SingUpWholeBody .ForgotPassLink {
+  font-size: 18px;
+  color: blue;
+}
+
+.SingUpWholeBody .btn1 {
+  color: white;
+  text-decoration: none;
+  border: 2px solid black;
+  padding: 10px 20px;
+  font-size: 18px;
+  background: transparent;
+  position: relative;
+  transition: all 0.5s;
+  overflow: hidden;
+  background-color: #274a8d;
+  border-radius: 5px;
+  font-family: "Oswald";
+}
+
+.SingUpWholeBody .btn1:hover {
+  color: black;
+}
+
+.SingUpWholeBody .btn1::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  top: 0;
+  left: -40px;
+  transform: skewX(45deg);
+  background-color: #274a8d;
+  z-index: -1;
+  transition: all 1s;
+}
+
+.SingUpWholeBody .btn1:hover::before {
+  width: 160%;
+}
+.SingUpWholeBody .btn-1 {
+  padding: 10px 70px;
+}
+
+.SingUpWholeBody .RegisterButton {
+  padding: 20px 70px;
+}
