@@ -9,21 +9,23 @@ const path = require("path");
 const { connectToDB } = require("./src/configs/db.config");
 require("dotenv").config({ path: path.resolve(__dirname, "./.env") });
 const app = express();
+var cors = require("cors");
 app.use(express.json());
-const AWS = require("aws-sdk");
+// const AWS = require("aws-sdk");
 
-AWS.config.update({
-  credentials: {
-    accessKeyId: process.env.USER_ACCESS_KEY,
-    secretAccessKey: process.env.USER_SECRET_KEY,
-  },
-  region: process.env.BUCKET_REGION,
-});
+// AWS.config.update({
+//   credentials: {
+//     accessKeyId: process.env.USER_ACCESS_KEY,
+//     secretAccessKey: process.env.USER_SECRET_KEY,
+//   },
+//   region: process.env.BUCKET_REGION,
+// });
 
 // connectToDatabase()
 //   .then(() => console.log("Connected to Database"))
 //   .catch((error) => console.log(error));
 
+app.use(cors())
 connectToDB(process.env.DB_CONNECTION);
 
 app.use(function (req, res, next) {
@@ -81,5 +83,5 @@ app.listen(3000, () => {
   console.log("Server started on port 3000");
 });
 
-module.exports = app
+module.exports = app;
 // module.exports.handler = serverless(app);
