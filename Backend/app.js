@@ -1,4 +1,4 @@
-const serverless = require("serverless-http");
+// const serverless = require("serverless-http");
 const express = require("express");
 const errorController = require("./src/controllers/error.controller");
 const { errorCodes } = require("./src/utils/constants.utils");
@@ -77,4 +77,7 @@ app.all("*", (req, res, next) => {
 
 app.use(errorController);
 
-module.exports.handler = serverless(app);
+app.listen(3000, () => {
+  console.log("Server started on port 3000");
+});
+// module.exports.handler = serverless(app);

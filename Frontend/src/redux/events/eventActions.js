@@ -1,4 +1,4 @@
-import { API_V1_BASE_URL } from "../../constants";
+import { RENDER_BACKEND_URL } from "../../constants";
 import { eventActions } from "./eventTypes";
 
 const getAllEventsInProgress = () => {
@@ -200,7 +200,7 @@ const getAllEvents = () => {
   return async (dispatch) => {
     dispatch(getAllEventsInProgress());
     try {
-      const response = await fetch(`${API_V1_BASE_URL}/events`);
+      const response = await fetch(`${RENDER_BACKEND_URL}/events`);
       const data = await response.json();
       if (data.status === "success") {
         dispatch(getAllEventsSuccess(data.data.events));
@@ -218,7 +218,7 @@ const getEventDetails = (eventId) => {
     const accessToken = getState().auth.accessToken;
     dispatch(getEventDetailsInProgress());
     try {
-      const response = await fetch(`${API_V1_BASE_URL}/events/${eventId}`, {
+      const response = await fetch(`${RENDER_BACKEND_URL}/events/${eventId}`, {
         headers: {
           Authorization: `Bearer ${accessToken}`,
         },
@@ -240,7 +240,7 @@ const hostEvent = (eventDetails) => {
     const accessToken = getState().auth.accessToken;
     dispatch(hostEventInProgress());
     try {
-      const response = await fetch(`${API_V1_BASE_URL}/myEvents`, {
+      const response = await fetch(`${RENDER_BACKEND_URL}/myEvents`, {
         method: "POST",
         headers: {
           Authorization: `Bearer ${accessToken}`,
@@ -266,7 +266,7 @@ const buyTicket = (eventId) => {
     dispatch(buyTicketInProgress());
     try {
       const response = await fetch(
-        `${API_V1_BASE_URL}/registrations/${eventId}/`,
+        `${RENDER_BACKEND_URL}/registrations/${eventId}/`,
         {
           method: "POST",
           headers: {
@@ -291,7 +291,7 @@ const getAllBookings = () => {
     const accessToken = getState().auth.accessToken;
     dispatch(getAllBookingsInProgress());
     try {
-      const response = await fetch(`${API_V1_BASE_URL}/registrations`, {
+      const response = await fetch(`${RENDER_BACKEND_URL}/registrations`, {
         headers: {
           Authorization: `Bearer ${accessToken}`,
         },
@@ -314,7 +314,7 @@ const deleteEventBooking = (eventId) => {
     dispatch(deleteEventBookingInProgress());
     try {
       const response = await fetch(
-        `${API_V1_BASE_URL}/registrations/${eventId}`,
+        `${RENDER_BACKEND_URL}/registrations/${eventId}`,
         {
           method: "DELETE",
           headers: {
@@ -339,7 +339,7 @@ const getMyHostedEvents = () => {
     const accessToken = getState().auth.accessToken;
     dispatch(getMyHostedEventsInProgress());
     try {
-      const response = await fetch(`${API_V1_BASE_URL}/myEvents`, {
+      const response = await fetch(`${RENDER_BACKEND_URL}/myEvents`, {
         headers: {
           Authorization: `Bearer ${accessToken}`,
         },
@@ -361,7 +361,7 @@ const deleteMyHostedEvent = (eventId) => {
     const accessToken = getState().auth.accessToken;
     dispatch(deleteMyHostedEventInProgress());
     try {
-      const response = await fetch(`${API_V1_BASE_URL}/myEvents/${eventId}`, {
+      const response = await fetch(`${RENDER_BACKEND_URL}/myEvents/${eventId}`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${accessToken}`,
@@ -384,7 +384,7 @@ const updateEvent = (eventId, eventDetails) => {
     const accessToken = getState().auth.accessToken;
     dispatch(updateEventInProgress());
     try {
-      const response = await fetch(`${API_V1_BASE_URL}/myEvents/${eventId}`, {
+      const response = await fetch(`${RENDER_BACKEND_URL}/myEvents/${eventId}`, {
         method: "PUT",
         headers: {
           Authorization: `Bearer ${accessToken}`,
@@ -410,7 +410,7 @@ const getHostedEventRegistrations = (eventId) => {
     dispatch(getHostedEventRegistrationsInProgress());
     try {
       const response = await fetch(
-        `${API_V1_BASE_URL}/myEvents/registrations/${eventId}`,
+        `${RENDER_BACKEND_URL}/myEvents/registrations/${eventId}`,
         {
           headers: {
             Authorization: `Bearer ${accessToken}`,

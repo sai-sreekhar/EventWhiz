@@ -1,5 +1,5 @@
 import { authActions } from "./authTypes";
-import { API_V1_BASE_URL } from "../../constants";
+import { RENDER_BACKEND_URL } from "../../constants";
 
 const signupInProgress = () => {
   return {
@@ -84,7 +84,7 @@ const signup = (name, email, contact, password) => {
   return async (dispatch) => {
     dispatch(signupInProgress());
     try {
-      const response = await fetch(`${API_V1_BASE_URL}/auth/signup`, {
+      const response = await fetch(`${RENDER_BACKEND_URL}/auth/signup`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -107,7 +107,7 @@ const login = (email, password) => {
   return async (dispatch) => {
     dispatch(loginInProgress());
     try {
-      const response = await fetch(`${API_V1_BASE_URL}/auth/login`, {
+      const response = await fetch(`${RENDER_BACKEND_URL}/auth/login`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -131,7 +131,7 @@ const logout = () => {
     const accessToken = getState().auth.accessToken;
     dispatch(logoutInProgress());
     try {
-      const response = await fetch(`${API_V1_BASE_URL}/auth/logout`, {
+      const response = await fetch(`${RENDER_BACKEND_URL}/auth/logout`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
@@ -155,7 +155,7 @@ const updateUserDetails = (name, email, contact) => {
     const accessToken = getState().auth.accessToken;
     dispatch(updateUserDetailsInProgress());
     try {
-      const response = await fetch(`${API_V1_BASE_URL}/users`, {
+      const response = await fetch(`${RENDER_BACKEND_URL}/users`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
